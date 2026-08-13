@@ -1,6 +1,6 @@
-# Authored Web Design
+# Intentional Web Design
 
-`authored-web-design` is a Codex skill for creating and refining websites that feel deliberately composed rather than assembled from generic AI or template patterns.
+`intentional-web-design` is a Codex skill for creating and refining websites that feel deliberately composed rather than assembled from generic AI or template patterns.
 
 It provides:
 
@@ -11,29 +11,29 @@ It provides:
 
 ## Install
 
-Copy `skills/authored-web-design` into your Codex skills directory:
+Copy `skills/intentional-web-design` into your Codex skills directory:
 
 ```bash
 mkdir -p ~/.codex/skills
-cp -R skills/authored-web-design ~/.codex/skills/authored-web-design
+cp -R skills/intentional-web-design ~/.codex/skills/intentional-web-design
 ```
 
 Then invoke it in a prompt:
 
 ```text
-Use $authored-web-design to create a vacation-rental website.
+Use $intentional-web-design to create a vacation-rental website.
 ```
 
 or:
 
 ```text
-Use $authored-web-design to audit this interface for generic AI design patterns and refine it.
+Use $intentional-web-design to audit this interface for generic AI design patterns and refine it.
 ```
 
 ## Package structure
 
 ```text
-skills/authored-web-design/
+skills/intentional-web-design/
 ├── SKILL.md
 ├── agents/openai.yaml
 └── references/

@@ -1,9 +1,9 @@
 ---
-name: authored-web-design
+name: intentional-web-design
 description: Create, redesign, audit, and refine complete websites so their composition, typography, imagery, commerce patterns, responsive behavior, and interactions feel deliberately art-directed rather than generic or template-generated. Use for new multi-page sites, landing pages, frontend visual direction, premium redesigns, anti-slop reviews, generic AI-looking interfaces, inconsistent page systems, weak hierarchy, repetitive cards or split sections, excessive whitespace, and requests to make a website feel custom-made.
 ---
 
-# Authored Web Design
+# Intentional Web Design
 
 Create websites whose visible decisions have a reason. Use one coherent visual idea, compose around real content, and reject generic layout habits before they reach the browser.
 
@@ -43,7 +43,7 @@ Delete or materially recompose a candidate when it matches a known rejected patt
 
 Do not repeat an existing project scaffold unless recognition or function requires it. Direct user feedback recorded in the registry overrides a proposed composition.
 
-## Authored-design rules
+## Intentional-design rules
 
 - Give every layout choice a content, interaction, or brand rationale.
 - Prefer one strong visual idea over a collection of fashionable effects.
@@ -52,7 +52,7 @@ Do not repeat an existing project scaffold unless recognition or function requir
 - Use relevant, varied, correctly cropped imagery that adds meaning.
 - Keep peer components stable and internally consistent.
 - Let responsive layouts recompose rather than merely shrink.
-- Preserve restraint. Authored does not mean visually busy.
+- Preserve restraint. Intentional does not mean visually busy.
 - Treat diagnostic warnings as prompts for justification, not universal bans.
 
 ## Anti-generic review

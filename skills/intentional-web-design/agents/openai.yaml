@@ -1,0 +1,4 @@
+interface:
+  display_name: "Intentional Web Design"
+  short_description: "Design websites that feel deliberate, not generic"
+  default_prompt: "Use $intentional-web-design to create or refine a distinctive, responsive website with an explicit anti-generic review."

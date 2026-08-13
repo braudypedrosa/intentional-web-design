@@ -29,4 +29,4 @@ Treat these as warnings requiring a specific justification. Reject them by defau
 - Repeated cards with unequal padding or arbitrary internal alignment.
 - Misaligned content widths across navigation, sections, forms, and footers.
 
-Changing color, ratio, labels, or ornamentation does not transform a rejected scaffold into an authored one.
+Changing color, ratio, labels, or ornamentation does not transform a rejected scaffold into an intentional one.
