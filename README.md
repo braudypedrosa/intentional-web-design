@@ -1,6 +1,6 @@
 # Intentional Web Design
 
-`intentional-web-design` is a Codex skill for creating and refining websites that feel deliberately composed rather than assembled from generic AI or template patterns.
+`intentional-web-design` is an Agent Skill for creating and refining websites that feel deliberately composed rather than assembled from generic AI or template patterns. It works with Codex and Claude Code.
 
 It provides:
 
@@ -9,7 +9,16 @@ It provides:
 - a learning registry that converts explicit project feedback into reusable design judgment;
 - a completion contract covering multi-page consistency, interactions, accessibility, and browser verification.
 
-## Install
+## Installation
+
+Clone the repository first:
+
+```bash
+git clone https://github.com/braudypedrosa/intentional-web-design.git
+cd intentional-web-design
+```
+
+### Codex
 
 Copy `skills/intentional-web-design` into your Codex skills directory:
 
@@ -29,6 +38,31 @@ or:
 ```text
 Use $intentional-web-design to audit this interface for generic AI design patterns and refine it.
 ```
+
+### Claude Code
+
+To make the skill available in every project, copy it to your personal Claude Code skills directory:
+
+```bash
+mkdir -p ~/.claude/skills
+cp -R skills/intentional-web-design ~/.claude/skills/intentional-web-design
+```
+
+For a project-scoped installation, run this from the target project's root instead:
+
+```bash
+mkdir -p .claude/skills
+cp -R /path/to/intentional-web-design/skills/intentional-web-design \
+  .claude/skills/intentional-web-design
+```
+
+Claude Code can load the skill automatically when a request matches its description. You can also invoke it directly:
+
+```text
+/intentional-web-design Create a vacation-rental website.
+```
+
+If the skills directory was created after Claude Code started and the skill does not appear immediately, restart Claude Code once.
 
 ## Package structure
 
