@@ -111,18 +111,6 @@ Add explicit real-world feedback to `references/learning-registry.md` with its c
 
 This keeps the skill opinionated without turning a single implementation preference into an unconditional design law.
 
-## Publishing approved improvements
-
-An explicit request to add, standardize, promote, or publish a rule starts the publishing workflow:
-
-1. update and validate the canonical repository skill;
-2. commit only the approved scope;
-3. push the current branch and verify the remote SHA;
-4. synchronize the committed skill to the configured local installation;
-5. validate and compare the installed copy against the repository.
-
-Rendered feedback without a request to change the skill remains evidence only. If older local changes have unclear approval, preserve them and ask before publishing them.
-
 ## License
 
 MIT
