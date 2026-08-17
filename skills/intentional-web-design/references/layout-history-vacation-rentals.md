@@ -59,3 +59,19 @@ Read this file only for vacation-rental, short-term-stay, or closely related hos
 - Fingerprint: centered solid masthead | planner-first introduction | selected gallery with thumbnail rail | compact fact rail and editorial body | review ledger | compact local-desk footer
 - Status: implemented
 - Notes: Verified selected-gallery state, lightbox, save/share controls, booking calculation, amenity disclosure, availability, image loading, console state, and responsive behavior.
+
+### 2026-08-18 — Morrow Field — homepage
+
+- Industry: vacation rentals
+- Implemented: H06, HE12, I03, S08, G07, T03, C07, F07
+- Fingerprint: persistent side dock | tall architectural image with external caption rail | left-anchored restrained serif | lateral five-cabin catalog | calendar-led booking canvas | image-edge compact footer
+- Status: implemented
+- Notes: Verified original project-bound imagery, shared hero and body container, horizontal cabin controls, material story, illustrated compass guide, sample review distribution, booking response, 14px text floor, semantic heading-adjacent paragraphs, internal separators, image loading, console state, and wide, laptop, tablet, and mobile recomposition.
+
+### 2026-08-18 — Morrow Field — property page
+
+- Industry: vacation rentals
+- Implemented: H06, D03, T03, G02, C07, F07
+- Fingerprint: persistent side dock | room-index media workspace | title and facts before room navigation | selectable room reel with attached captions | calendar and rate ticket culmination | image-edge compact footer
+- Status: implemented
+- Notes: Verified room switching, full-screen image viewer, amenity disclosure, interactive sample calendar, rate calculation, review distribution, map-led location context, policy disclosures, 14px text floor, semantic heading-adjacent paragraphs, internal separators, image loading, console state, and wide, laptop, tablet, and mobile recomposition.
