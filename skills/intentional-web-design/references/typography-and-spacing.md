@@ -68,6 +68,12 @@ small, .text-small { font-size: var(--fs-small); line-height: 1.5; }
 - Do not introduce arbitrary pixel heading sizes between these roles without a rendered, content-specific reason.
 - During rendered QA, inspect computed font sizes for every visible text-bearing element and fail the page if the minimum is below 14px. Do not rely on a token existing in `:root`; verify that component overrides obey it.
 
+## Semantic text roles
+
+- Mark descriptive or explanatory copy that follows an H1, H2, or H3 as a paragraph. Its HTML role must match the prose role even when a class supplies special visual styling.
+- Reserve `span` for inline phrasing, icons, and genuine sublabels or metadata. Do not use a span as block-level body copy merely to target it in CSS.
+- Audit the rendered DOM as well as the visual result. A visually paragraph-like span still fails this standard.
+
 ## Spacing and alignment
 
 - Establish a shared content-width system and explicit internal alignment rules.

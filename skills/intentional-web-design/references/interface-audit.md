@@ -7,6 +7,7 @@ Use this audit for existing sites and apps before proposing changes. Intentional
 - Replace anonymous default typography when it weakens identity; choose type for the brand and content, not trend compliance.
 - Keep display scale reserved for real focal moments. Use balanced wrapping, controlled tracking, and readable line lengths.
 - Establish semantic roles for display, H1–H3, lead, body, labels, metadata, and numeric data.
+- Inspect the element following each H1, H2, and H3. Descriptive prose must use paragraph semantics; spans are acceptable only for genuine inline phrasing, icons, sublabels, or metadata.
 - Avoid all-caps labels as an automatic hierarchy device. Prefer sentence case or real functional labels.
 - Check real longest labels, orphans, wrapping, and clipping at intermediate widths.
 

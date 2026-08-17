@@ -105,6 +105,7 @@ Do not call the work complete until:
 - Major sections have defensible content or brand rationale.
 - Shared components, controls, widths, and interaction states are consistent.
 - Every visible text-bearing element computes to at least 14px at every supported viewport.
+- Descriptive copy following H1, H2, or H3 headings uses paragraph semantics; spans are limited to inline phrasing, icons, and genuine sublabels or metadata.
 - Repeated bordered groups use internal separators without unnecessary first-item top or last-item bottom rules.
 - Images load, crops are intentional, and major imagery is not needlessly repeated.
 - Desktop and mobile have been visually inspected on every page.

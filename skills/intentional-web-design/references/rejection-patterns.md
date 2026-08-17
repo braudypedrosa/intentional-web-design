@@ -34,12 +34,14 @@ Treat these as warnings requiring a specific justification. Reject them by defau
 - Eyebrows, kickers, or subheaders whose spacing to their associated heading changes between otherwise equivalent section-header usages.
 - Repeated bordered items that leave an unnecessary rule above the first item or below the last item instead of using internal separators.
 - Text-and-action rows whose action stretches across unused space or aligns to the middle or bottom of multi-line copy instead of remaining bounded, end-aligned, and top-aligned.
+- Block-length descriptive copy marked up as a span, especially when it directly follows an H1, H2, or H3.
 
 ## Bad-design audit gate
 
 Treat the design as failed, not merely unfinished, when any of these conditions remain in a rendered page:
 
 - hierarchy depends on oversized headings, tiny supporting copy, or decorative uppercase labels rather than content structure;
+- descriptive prose following an H1, H2, or H3 uses span markup instead of a paragraph;
 - any visible text computes below 14px at a supported viewport;
 - headings wrap awkwardly, produce avoidable orphans, collide with nearby content, or use manual line breaks that fail across breakpoints;
 - equivalent section headers, fields, cards, buttons, or lists use inconsistent spacing or alignment;

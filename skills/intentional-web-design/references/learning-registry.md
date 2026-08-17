@@ -160,6 +160,15 @@ This registry stores explicit feedback from real website work. Apply `broad` les
 - **Principle:** Taste guidance is not enforceable when every problem is described as a preference. Repeated structural, typographic, responsive, and interaction failures need a clear revision gate.
 - **Apply:** Run the bad-design audit gate in the rejection reference at desktop and mobile. Any unresolved failure keeps the page in revision.
 
+### Descriptive copy belongs in paragraphs
+
+- **Date:** 2026-08-17
+- **Scope:** broad
+- **Context:** Strandline planner introduction and descriptive text following section headings.
+- **Feedback:** Text after H1, H2, and H3 headings is paragraph content; spans should be used only for sublabels.
+- **Principle:** HTML semantics should describe the content role. Styling prose as a block does not turn an inline span into a paragraph.
+- **Apply:** Mark heading-adjacent descriptive or explanatory copy as `p`. Reserve `span` for inline phrasing, icons, and genuine sublabels or metadata, and use a class when the paragraph needs component-specific styling.
+
 ## Adding a lesson
 
 Append entries using this format:
