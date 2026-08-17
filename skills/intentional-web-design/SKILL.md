@@ -13,42 +13,46 @@ Own the brand, audit, layout-selection, rotation, rejection, responsive, and qua
 
 When the user requests a complete site and supplies no sitemap, build Home, About, Services, and Contact. Use the requested stack when specified; otherwise prefer a self-contained implementation with shared tokens and reusable components.
 
-Before visual decisions, read:
+## Task routing
 
-- [references/rejection-patterns.md](references/rejection-patterns.md)
-- [references/typography-and-spacing.md](references/typography-and-spacing.md)
-- [references/layout-system.md](references/layout-system.md)
-- [references/imagery-and-icons.md](references/imagery-and-icons.md)
-- [references/responsive-and-quality.md](references/responsive-and-quality.md)
+Treat the first word after `$intentional-web-design` as an optional subcommand. An explicit subcommand wins. When none is supplied, infer one primary route from the request and state it before acting. Load only that route's references plus relevant conditional add-ons; do not read the entire skill library by default.
 
-For shops, rentals, directories, service catalogs, or other inventory-led experiences, also read [references/commerce-and-inventory.md](references/commerce-and-inventory.md).
+| Route | Use for | Required references |
+|---|---|---|
+| `create` | New sites, landing pages, and new visual systems | [rejection patterns](references/rejection-patterns.md), [typography and spacing](references/typography-and-spacing.md), [layout system](references/layout-system.md), [imagery and icons](references/imagery-and-icons.md), [responsive and quality](references/responsive-and-quality.md), [layout archetypes](references/layout-archetypes.md), and [layout usage index](references/layout-usage-registry.md) |
+| `redesign` | Structural replacement of an existing visual direction | All `create` references plus [interface audit](references/interface-audit.md) |
+| `refine` | Narrow visual or interaction improvements that preserve the existing direction | [interface audit](references/interface-audit.md), the affected core reference, and [responsive and quality](references/responsive-and-quality.md) |
+| `audit` | Read-only critique, bad-design review, or technical UI assessment | [interface audit](references/interface-audit.md), [rejection patterns](references/rejection-patterns.md), and [responsive and quality](references/responsive-and-quality.md) |
+| `layout` | Section architecture, layout alternatives, or rotation planning | [layout archetypes](references/layout-archetypes.md), [layout system](references/layout-system.md), [layout usage index](references/layout-usage-registry.md), and [rejection patterns](references/rejection-patterns.md) |
+| `brand` | Brand strategy, identity, logo, board, or production assets | [brand identity and assets](references/brand-identity-and-assets.md), [typography and spacing](references/typography-and-spacing.md), and [imagery and icons](references/imagery-and-icons.md) |
+| `improve` | Add, promote, validate, publish, or reorganize this skill's own criteria | [learning registry](references/learning-registry.md) and [skill evolution](references/skill-evolution.md) |
 
-When refining the criteria or applying accumulated user feedback, read [references/learning-registry.md](references/learning-registry.md).
+Apply these conditional add-ons:
 
-For audits or redesigns of existing sites and apps, read [references/interface-audit.md](references/interface-audit.md). It contains the skill's self-owned typography, surface, layout, component, interaction, responsive, trust, and code-quality criteria.
+- For shops, rentals, directories, service catalogs, or other inventory-led experiences, read [commerce and inventory](references/commerce-and-inventory.md).
+- For layout selection in vacation rentals, read only the matching [vacation-rental layout history](references/layout-history-vacation-rentals.md) after the layout usage index. Add future industry history files to this routing section when they are created.
+- When direct user feedback may override a proposed design decision, read the relevant entries in the [learning registry](references/learning-registry.md).
 
-For complete sites, structural redesigns, or any request for layout variety, read [references/layout-archetypes.md](references/layout-archetypes.md) and [references/layout-usage-registry.md](references/layout-usage-registry.md) before proposing sections. Use the catalog by section type and the registry to avoid recent structural repetition.
-
-When the request includes brand strategy, a logo, a brand board, identity direction, or a complete brand package, read [references/brand-identity-and-assets.md](references/brand-identity-and-assets.md) before creating brand visuals or files. Use its production contract even when branding is only one phase of a larger website build.
+Subcommands are routing aids, not separate authorities. All routes share the intentional-design rules and completion contract below. A request spanning multiple routes gets one primary route and only the necessary add-ons.
 
 ## Workflow
 
 1. Inspect the brief, existing project, visible pages, assets, content, and technical constraints.
 2. Identify the audience, promise, content hierarchy, visual world, and one defining brand and compositional idea.
 3. Inventory the major section scaffolds already visible in the project.
-4. Select section archetypes through the layout-rotation procedure and record the proposed composition fingerprint.
+4. Select section archetypes through the layout-rotation procedure and compare the proposed composition fingerprint with the relevant industry history file.
 5. Run the rejection gate before writing or revising layout code.
 6. Establish shared tokens for width, spacing, typography, color, controls, imagery, and breakpoints.
 7. Implement complete content, navigation, assets, interactions, responsive behavior, and accessible states.
 8. Vary composition when the content changes while preserving the shared system.
 9. Run the anti-generic review and rendered QA before completion.
-10. Record implemented archetype IDs in the layout usage registry only after rendered desktop and mobile verification.
+10. Record implemented archetype IDs in the relevant industry layout history only after rendered desktop and mobile verification.
 
 When branding is in scope, establish or verify the identity before finalizing website tokens. Generate the final brand board from the same canonical logo, colors, fonts, and graphics included in the production asset package. Keep a stable `branding/` directory and update it in place across revisions.
 
 ## Mandatory rejection gate
 
-For every proposed major section, state its purpose, composition, typography role, imagery role, and action. Compare it with the rejection references and the broad entries in the learning registry.
+For every proposed major section, state its purpose, composition, typography role, imagery role, and action. Compare it with the rejection references and any relevant broad entries in the learning registry.
 
 Delete or materially recompose a candidate when it matches a known rejected pattern. Renaming a kicker, changing a split ratio, reducing the headline, replacing rules with floating labels, or changing colors does not make the scaffold new.
 
@@ -121,7 +125,9 @@ Update the learning registry only from explicit feedback observed during real wo
 
 Use `project-specific` for one implementation, `provisional` for a likely preference needing more evidence, and `broad` only after repeated confirmation or an explicit universal instruction. Preserve conflicting lessons with their conditions instead of silently deleting one.
 
-When a lesson becomes broad, promote its concise rule into the appropriate reference file while retaining the evidence entry in the registry. Validate the skill after structural changes.
+When a lesson becomes broad, promote its concise rule into one owning reference file while retaining the evidence entry in the registry. Other files may link to that owner or contain a short completion check, but must not grow competing versions of the rule.
+
+Follow the routing, ownership, sharding, and growth thresholds in [references/skill-evolution.md](references/skill-evolution.md). Validate structural integrity after every skill change.
 
 ## Publishing approved improvements
 
@@ -130,7 +136,7 @@ Treat an improvement as approved when the user explicitly asks to add it to the 
 After approval, complete this workflow in order:
 
 1. Update the canonical source repository and the relevant progressive references. Keep unrelated or unapproved working-tree changes out of the scope.
-2. Run `git diff --check` and validate the repository skill with the Skill Creator `quick_validate.py` script.
+2. Run `git diff --check`, `python scripts/validate_skill_structure.py`, and the Skill Creator `quick_validate.py` script against the repository skill.
 3. Review the exact staged diff, then create a focused professional commit describing the approved behavior change.
 4. Push the current branch to its configured remote and verify that the remote branch SHA matches local `HEAD`. Do not report publication from a local commit alone.
 5. Only after remote verification, synchronize the committed skill directory into the configured local installation, including the global Codex skill and any already-configured platform copies.
