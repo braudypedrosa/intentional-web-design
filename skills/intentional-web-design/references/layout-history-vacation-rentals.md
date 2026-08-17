@@ -60,18 +60,34 @@ Read this file only for vacation-rental, short-term-stay, or closely related hos
 - Status: implemented
 - Notes: Verified selected-gallery state, lightbox, save/share controls, booking calculation, amenity disclosure, availability, image loading, console state, and responsive behavior.
 
-### 2026-08-18 — Morrow Field — homepage
+### 2026-08-18 — Morrow Field v1 — homepage
 
 - Industry: vacation rentals
 - Implemented: H06, HE12, I03, S08, G07, T03, C07, F07
 - Fingerprint: persistent side dock | tall architectural image with external caption rail | left-anchored restrained serif | lateral five-cabin catalog | calendar-led booking canvas | image-edge compact footer
-- Status: implemented
-- Notes: Verified original project-bound imagery, shared hero and body container, horizontal cabin controls, material story, illustrated compass guide, sample review distribution, booking response, 14px text floor, semantic heading-adjacent paragraphs, internal separators, image loading, console state, and wide, laptop, tablet, and mobile recomposition.
+- Status: rejected
+- Notes: The persistent side dock was explicitly rejected as terrible design because it constrained the page edge and made the navigation feel overly self-conscious. The remaining page composition and functionality were retained for the replacement.
 
-### 2026-08-18 — Morrow Field — property page
+### 2026-08-18 — Morrow Field v1 — property page
 
 - Industry: vacation rentals
 - Implemented: H06, D03, T03, G02, C07, F07
 - Fingerprint: persistent side dock | room-index media workspace | title and facts before room navigation | selectable room reel with attached captions | calendar and rate ticket culmination | image-edge compact footer
+- Status: revised
+- Notes: The shared H06 side dock was rejected with the homepage and removed from the property template. The room-index, booking, review, location, and footer structures remained suitable.
+
+### 2026-08-18 — Morrow Field v2 — homepage
+
+- Industry: vacation rentals
+- Implemented: H02, HE12, I03, S08, G07, T03, C07, F07
+- Fingerprint: solid editorial header | tall architectural image with external caption rail | left-anchored restrained serif | lateral five-cabin catalog | calendar-led booking canvas | image-edge compact footer
 - Status: implemented
-- Notes: Verified room switching, full-screen image viewer, amenity disclosure, interactive sample calendar, rate calculation, review distribution, map-led location context, policy disclosures, 14px text floor, semantic heading-adjacent paragraphs, internal separators, image loading, console state, and wide, laptop, tablet, and mobile recomposition.
+- Notes: Replaced the rejected vertical dock with a compact horizontal wordmark, centered navigation, and bounded booking action inside the canonical page container. Verified desktop and 375px mobile rendering, mobile menu structure, shared header, hero, and body widths, 14px text floor, zero horizontal overflow, image loading, semantic heading-adjacent copy, and complete removal of the side-dock markup.
+
+### 2026-08-18 — Morrow Field v2 — property page
+
+- Industry: vacation rentals
+- Implemented: H02, D03, T03, G02, C07, F07
+- Fingerprint: solid editorial header | room-index media workspace | title and facts before room navigation | selectable room reel with attached captions | calendar and rate ticket culmination | image-edge compact footer
+- Status: implemented
+- Notes: Applied the same bounded editorial header with property context beneath the wordmark and a right-aligned booking action. Verified desktop and 375px mobile rendering, shared header and body widths, 14px text floor, zero horizontal overflow, image loading, and complete removal of the side-dock markup.
