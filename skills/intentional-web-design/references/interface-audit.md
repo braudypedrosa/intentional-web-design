@@ -82,3 +82,5 @@ Before implementation, summarize:
 3. Surface, imagery, and identity weaknesses.
 4. Missing interaction, responsive, accessibility, and trust states.
 5. Proposed archetype IDs and their six-part composition fingerprint.
+
+Conclude with a pass or revision decision using the bad-design audit gate in `rejection-patterns.md`. List every failed condition with rendered evidence; do not soften a structural failure into a vague preference.

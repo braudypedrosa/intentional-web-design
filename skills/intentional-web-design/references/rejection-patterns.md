@@ -32,5 +32,25 @@ Treat these as warnings requiring a specific justification. Reject them by defau
 - Misaligned content widths across navigation, sections, forms, and footers.
 - Hero content containers whose maximum width or horizontal gutters do not match the primary body container.
 - Eyebrows, kickers, or subheaders whose spacing to their associated heading changes between otherwise equivalent section-header usages.
+- Repeated bordered items that leave an unnecessary rule above the first item or below the last item instead of using internal separators.
+- Text-and-action rows whose action stretches across unused space or aligns to the middle or bottom of multi-line copy instead of remaining bounded, end-aligned, and top-aligned.
+
+## Bad-design audit gate
+
+Treat the design as failed, not merely unfinished, when any of these conditions remain in a rendered page:
+
+- hierarchy depends on oversized headings, tiny supporting copy, or decorative uppercase labels rather than content structure;
+- any visible text computes below 14px at a supported viewport;
+- headings wrap awkwardly, produce avoidable orphans, collide with nearby content, or use manual line breaks that fail across breakpoints;
+- equivalent section headers, fields, cards, buttons, or lists use inconsistent spacing or alignment;
+- borders describe every item independently and create doubled or unnecessary outer rules instead of clear internal separators;
+- a layout uses empty space, opposing text columns, arbitrary offset, or asymmetry without a content or interaction reason;
+- controls are visually ambiguous, undersized, stretched by their layout track, or detached from the information they affect;
+- responsive behavior merely shrinks the desktop composition, damages reading order, or leaves isolated labels and headings;
+- imagery is repeated, poorly cropped, irrelevant, low contrast, or functioning only as rectangle filler;
+- the page has horizontal overflow, clipped text, broken states, fake controls, inaccessible focus behavior, or inconsistent containers;
+- the interface could be transferred unchanged to an unrelated business without losing meaning.
+
+Run this gate on desktop and mobile before approval. One unresolved failure keeps the design in revision.
 
 Changing color, ratio, labels, or ornamentation does not transform a rejected scaffold into an intentional one.

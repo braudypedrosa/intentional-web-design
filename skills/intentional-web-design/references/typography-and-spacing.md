@@ -63,8 +63,10 @@ small, .text-small { font-size: var(--fs-small); line-height: 1.5; }
 - Use `.h2--lg` for one major section or conversion statement at a time, not every section heading.
 - Use `.h3--lg` for a featured card, property, product, or editorial title that genuinely needs more emphasis than peer H3 headings.
 - Keep body content on `--fs-body`; use `--fs-small` for metadata, captions, and secondary controls rather than ordinary paragraphs.
+- Treat `--fs-small` as a strict rendered floor. No visible text, including footer legal copy, labels, captions, metadata, table content, navigation, helper text, and control text, may compute below 14px at any supported viewport.
 - Keep typeface selection separate from this scale. A brand may change font families and weights while preserving these semantic size, line-height, and letter-spacing roles.
 - Do not introduce arbitrary pixel heading sizes between these roles without a rendered, content-specific reason.
+- During rendered QA, inspect computed font sizes for every visible text-bearing element and fail the page if the minimum is below 14px. Do not rely on a token existing in `:root`; verify that component overrides obey it.
 
 ## Spacing and alignment
 

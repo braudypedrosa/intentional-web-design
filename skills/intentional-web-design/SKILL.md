@@ -104,6 +104,8 @@ Do not call the work complete until:
 - Content is specific and contains no placeholders or invented business claims.
 - Major sections have defensible content or brand rationale.
 - Shared components, controls, widths, and interaction states are consistent.
+- Every visible text-bearing element computes to at least 14px at every supported viewport.
+- Repeated bordered groups use internal separators without unnecessary first-item top or last-item bottom rules.
 - Images load, crops are intentional, and major imagery is not needlessly repeated.
 - Desktop and mobile have been visually inspected on every page.
 - Important navigation, forms, filters, menus, and primary actions work.

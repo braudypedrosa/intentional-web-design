@@ -124,6 +124,42 @@ This registry stores explicit feedback from real website work. Apply `broad` les
 - **Principle:** Display type should establish hierarchy without turning ordinary marketing copy into a poster composition.
 - **Apply:** Use the baseline `.h1--lg` scale only for a primary hero or singular campaign statement, and keep it to one or two desktop lines in its intended container. Step down to the standard H1 scale or revise the measure or copy when it wraps further.
 
+### Fourteen pixels is the absolute text floor
+
+- **Date:** 2026-08-17
+- **Scope:** broad
+- **Context:** Strandline footer legal row, labels, captions, metadata, and helper copy across desktop and mobile.
+- **Feedback:** The smallest allowed visible text is 14px, and the supplied typography criteria must be followed strictly in every build.
+- **Principle:** A documented token is meaningless when individual components override it with unreadably small type.
+- **Apply:** Treat `--fs-small: 0.875rem` as a strict computed minimum for every visible text-bearing element. Audit the rendered DOM and reject any supported viewport containing text below 14px.
+
+### Item borders are separators, not outer decoration
+
+- **Date:** 2026-08-17
+- **Scope:** broad
+- **Context:** Strandline mobile planner fields and any repeated bordered list or field group.
+- **Feedback:** When items are separated by borders, the first item must not have a top border and the last item must not have a bottom border.
+- **Principle:** Rules should explain the relationship between adjacent items. Extra outer rules create accidental containment and visual noise.
+- **Apply:** Use adjacent-sibling separators or equivalent internal-border logic. Add an outer border only when the group itself is intentionally contained.
+
+### Copy-action rows need bounded top-aligned actions
+
+- **Date:** 2026-08-17
+- **Scope:** broad
+- **Context:** Strandline approach note with multi-line editorial copy and a secondary property action.
+- **Feedback:** This horizontal composition works only when the button or action has limited width, is right aligned, and is top aligned.
+- **Principle:** An action is a discrete destination, not a second fluid text column. Stretching or low alignment weakens association and produces empty interactive geometry.
+- **Apply:** Size the action intrinsically or cap its width, align it to the inline end and block start, and recompose it deliberately on small screens without allowing it to stretch.
+
+### Bad-design criteria need an explicit fail state
+
+- **Date:** 2026-08-17
+- **Scope:** broad
+- **Context:** Strandline mobile section headings and continuing website critique.
+- **Feedback:** The skill must define audit criteria for what constitutes bad web design.
+- **Principle:** Taste guidance is not enforceable when every problem is described as a preference. Repeated structural, typographic, responsive, and interaction failures need a clear revision gate.
+- **Apply:** Run the bad-design audit gate in the rejection reference at desktop and mobile. Any unresolved failure keeps the page in revision.
+
 ## Adding a lesson
 
 Append entries using this format:

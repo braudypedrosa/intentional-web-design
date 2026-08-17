@@ -99,6 +99,12 @@ The skill includes a production-ready fluid type scale in [`typography-and-spaci
 
 Use `.h1--lg` only for the primary hero or a singular campaign statement, and keep it to one or two lines at desktop widths. Equivalent eyebrows or subheaders use one shared `--space-xs` gap to their heading. The rejection criteria prohibit the default two-column introduction that places a large heading in one column and supporting copy in the other without a functional relationship.
 
+## Strict audit gates
+
+Every build must pass the bad-design audit in [`rejection-patterns.md`](skills/intentional-web-design/references/rejection-patterns.md) at desktop and mobile. Visible text has an absolute computed minimum of 14px. Repeated bordered groups use internal separators without an unnecessary rule above the first item or below the last. Horizontal copy-and-action rows keep the action width-bounded, right aligned, and top aligned.
+
+An unresolved audit failure keeps the design in revision; changing color, typeface, or decoration does not convert a failed structure into an approved design.
+
 ## Evolving the criteria
 
 Add explicit real-world feedback to `references/learning-registry.md` with its context, principle, scope, and future application rule. Promote a lesson into a core reference only after repeated confirmation or a clear universal instruction.

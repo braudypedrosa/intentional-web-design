@@ -73,7 +73,7 @@ Track rendered layout use so future projects rotate structure instead of repeati
 - Implemented: H05, HE04, I02, G05, S01, C05, F05
 - Fingerprint: centered solid masthead | contained three-image ribbon | headline-first quiet editorial | featured stay plus secondary pair | calm planner canvas | compact local-desk footer
 - Status: implemented
-- Notes: Full art-direction redesign after v2 was rejected. Verified uniform hero/body container, navigation, neighborhood lenses, planner behavior, image loading, console state, and desktop, tablet, and mobile recomposition. Later approved refinements applied the baseline type scale, constrained the hero to two lines, standardized eyebrow spacing, and replaced the non-functional split collection introduction with one reading flow.
+- Notes: Full art-direction redesign after v2 was rejected. Verified uniform hero/body container, navigation, neighborhood lenses, planner behavior, image loading, console state, and desktop, tablet, and mobile recomposition. Later approved refinements applied the baseline type scale, constrained the hero to two lines, standardized eyebrow spacing, replaced the non-functional split collection introduction with one reading flow, enforced a 14px text floor, changed field borders to internal separators, and bounded the approach action at the row's top-right.
 
 ### 2026-08-17 — Strandline v3 — property page
 
