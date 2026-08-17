@@ -1,12 +1,13 @@
 # Intentional Web Design
 
-`intentional-web-design` is an Agent Skill for creating and refining websites that feel deliberately composed rather than assembled from generic AI or template patterns. It works with Codex and Claude Code.
+`intentional-web-design` is an Agent Skill for creating and refining brand systems and websites that feel deliberately composed rather than assembled from generic AI or template patterns. It works with Codex and Claude Code.
 
 It provides:
 
 - a mandatory pre-code rejection gate;
 - practical criteria for composition, typography, spacing, imagery, icons, inventory, responsive behavior, and rendered QA;
 - a learning registry that converts explicit project feedback into reusable design judgment;
+- a brand-identity workflow for strategy, logo systems, exact brand boards, and full production asset packages;
 - a completion contract covering multi-page consistency, interactions, accessibility, and browser verification.
 
 ## Installation
@@ -37,6 +38,12 @@ or:
 
 ```text
 Use $intentional-web-design to audit this interface for generic AI design patterns and refine it.
+```
+
+For a complete identity package:
+
+```text
+Use $intentional-web-design to create the brand direction, final brand board, logo system, and full production brand assets for my product.
 ```
 
 ### Claude Code
@@ -75,7 +82,11 @@ skills/intentional-web-design/
     ├── typography-and-spacing.md
     ├── layout-system.md
     ├── imagery-and-icons.md
+    ├── brand-identity-and-assets.md
     ├── commerce-and-inventory.md
+    ├── interface-audit.md
+    ├── layout-archetypes.md
+    ├── layout-usage-registry.md
     ├── responsive-and-quality.md
     └── learning-registry.md
 ```
@@ -93,6 +104,18 @@ Use `.h1--lg` only for the primary hero or a singular campaign statement, and ke
 Add explicit real-world feedback to `references/learning-registry.md` with its context, principle, scope, and future application rule. Promote a lesson into a core reference only after repeated confirmation or a clear universal instruction.
 
 This keeps the skill opinionated without turning a single implementation preference into an unconditional design law.
+
+## Publishing approved improvements
+
+An explicit request to add, standardize, promote, or publish a rule starts the publishing workflow:
+
+1. update and validate the canonical repository skill;
+2. commit only the approved scope;
+3. push the current branch and verify the remote SHA;
+4. synchronize the committed skill to the configured local installation;
+5. validate and compare the installed copy against the repository.
+
+Rendered feedback without a request to change the skill remains evidence only. If older local changes have unclear approval, preserve them and ask before publishing them.
 
 ## License
 
