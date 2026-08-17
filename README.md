@@ -73,6 +73,7 @@ skills/intentional-web-design/
 └── references/
     ├── rejection-patterns.md
     ├── typography-and-spacing.md
+    ├── layout-system.md
     ├── imagery-and-icons.md
     ├── commerce-and-inventory.md
     ├── responsive-and-quality.md
@@ -80,6 +81,12 @@ skills/intentional-web-design/
 ```
 
 The core workflow stays concise. Detailed criteria are loaded progressively based on the task.
+
+## Baseline typography and layout standards
+
+The skill includes a production-ready fluid type scale in [`typography-and-spacing.md`](skills/intentional-web-design/references/typography-and-spacing.md) and a companion spacing, container, grid, and component system in [`layout-system.md`](skills/intentional-web-design/references/layout-system.md). Together they cover the 375px-to-1440px range, semantic heading roles, readable body copy, canonical page widths, section rhythm, grid gaps, fields, cards, and buttons.
+
+Use `.h1--lg` only for the primary hero or a singular campaign statement, and keep it to one or two lines at desktop widths. Equivalent eyebrows or subheaders use one shared `--space-xs` gap to their heading. The rejection criteria prohibit the default two-column introduction that places a large heading in one column and supporting copy in the other without a functional relationship.
 
 ## Evolving the criteria
 

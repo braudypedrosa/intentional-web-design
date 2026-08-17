@@ -17,6 +17,7 @@ Before visual decisions, read:
 
 - [references/rejection-patterns.md](references/rejection-patterns.md)
 - [references/typography-and-spacing.md](references/typography-and-spacing.md)
+- [references/layout-system.md](references/layout-system.md)
 - [references/imagery-and-icons.md](references/imagery-and-icons.md)
 - [references/responsive-and-quality.md](references/responsive-and-quality.md)
 
